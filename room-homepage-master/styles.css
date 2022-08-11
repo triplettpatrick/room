@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: "League Spartan", sans-serif;
+    font-size: 12px; 
+}
+
+main {
+    width: 100%;
+}
+
+h1 {
+    font-size: 55px;
+    line-height: 1;
+}
+
+/* Navigation Bar  */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+/* Nav Links  */
+
+.nav-links-container .nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 45px;
+}
+
+.nav-links-container .nav-links li {
+    margin-left: 2em;
+    justify-content: left;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-links-container .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+/* Grid Items  */ 
+/* Item 1 */
+.item1 {
+    background-image: url(images/desktop-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: header;
+    object-fit: cover;
+    
+    color: #fff;
+}
+
+.item1 .logo {
+    font-size: 40px;
+}
+
+.item1 .logo h1 {
+    margin-left: 40px;
+}
+
+.item2 { 
+    position: relative;
+    grid-area: right;
+    
+}
+
+/* .item2-buttons .l-arrow {
+    color: #fff;
+    
+} */
+
+/* Item 2 */
+.item2-text {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    padding: 15% 60px 0 60px;
+}
+
+.item2-text .right-description {
+    font-size: 18px;
+    margin-top: 20px;
+    color: rgb(135, 133, 133);
+    line-height: 1.3;
+}
+
+.item2-text .shop-now {
+    font-size: 18px;
+    color: rgb(135, 133, 133);
+    margin-top: 20px;
+    letter-spacing: 20px;
+}
+
+/* Item 3 */
+.item3 { 
+    background-image: url(images/image-about-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: menu; 
+}
+
+/* Item 4 */
+.item4 { 
+    position: relative;
+    grid-area: main;
+}
+
+.item4-text {
+    position: absolute;
+    /* position: absolute;
+    display: inline-block; */
+    width: 100%;
+    /* padding: 15% 60px 0 60px;  */
+}
+
+.item4-text .middle-description {
+    font-size: 14px;
+    padding: 20px 20px 0 20px;
+    color: rgb(135, 133, 133);
+    line-height: 1.3;
+}
+
+.item4 h1 {
+    font-size: 18px;
+    padding-top: 45px;
+    padding-left: 25px;
+    letter-spacing: 10px;
+}
+
+/* Item 5 */
+.item5 { 
+    background-image: url(images/image-about-light.jpg);
+    grid-area: footer; 
+}
+
+/* Grid Container  */
+.grid-container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    'header header header right right right right right'
+    'header header header right right right right right'
+    'menu menu main main footer footer footer footer'
+}
+
+/* Buttons  */
+.item2-buttons {
+    display: flex;
+    height: 70px;
+    width: 100%;
+
+}
+
+.right-button-container .right-button .l-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+
+    font-size: 24px;
+
+}
+
+.left-button-container .left-button .r-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 24px;
+    color: #fff;
+}
+
+.left-button {
+    position: absolute;
+    bottom: 0;
+    left: 65px;
+    height: 65px;
+    width: 65px;
+    background-color: rgb(77, 77, 77);
+    border: 2px solid rgb(77, 77, 77);
+}
+
+.right-button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 65px;
+    width: 65px;
+    background-color: black;
+    border: 2px solid black;
+}
+
+.arrow {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
